@@ -586,17 +586,22 @@ body.light-theme .sobre ,
 
   .emoji {
     z-index: -1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 18%;
   }
 
   .texto {
     top: 80px;
     /* Ajuste a posição vertical conforme necessário */
-    left: 30px;
+    left: 20px;
     /* Ajuste a posição horizontal conforme necessário */
   }
 
   .li3 {
-    margin-right: -20px;
+    margin-right: -10px;
   }
 
   .mobile-menu {
