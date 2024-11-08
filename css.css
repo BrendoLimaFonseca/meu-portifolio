@@ -31,7 +31,7 @@ body {
 .emoji {
   width: 450px;
   float: right;
-  right: 30px;
+  right: 10%;
   position: relative;
   top: 10px;
   animation: slideInFromRight 1s ease-out;
@@ -139,6 +139,7 @@ nav a::after {
 
 .li5 {
   list-style: none;
+  margin-right: 3vw;
 }
 
 nav a:hover::after {
@@ -169,8 +170,467 @@ nav a:hover::after {
 .texto {
   color: #fff;
   position: relative;
-  left: 65px;
+  left: 15%;
   top: 125px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.h2,
+.h1,
+.p {
+  margin-bottom: -35px;
+  /* Ajuste este valor conforme necessário */
+}
+
+.h2 {
+  font-size: 35px;
+}
+
+.h1 {
+  font-size: 70px;
+  color: #865dff;
+}
+
+.p {
+  font-size: 40px;
+}
+
+.p span {
+  color: #865dff;
+}
+
+.logos {
+  position: relative;
+  top: 50px;
+  width: 100px;
+}
+
+i {
+  width: 100px;
+}
+
+.sobremim {
+  width: 100vw;
+  height: 450px;
+  background-color: #865dff;
+  top: 300px;
+  position: relative;
+}
+
+.projetos3{
+  position: relative;
+  top: 30vh;
+}
+
+.footer {
+  width: 100vw;
+  height: 300px;
+  background-color: #865dff;
+  
+  position: relative;
+  top: 80vh;
+}
+
+.listas {
+  width: 400px;
+  position: relative;
+  float: right;
+  top: -80%;
+  right: 10%;
+  color: #fff;
+ 
+}
+.sobre.animate,
+.descricao.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+  
+}
+
+.listas.animate {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+.video1.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.classes.animate {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+.video2.animate {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+.classes2.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.ul4.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.contatos.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #865dff;
+}
+
+
+
+.sobre, .descricao , .meus ,.titulo-loja {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  position: relative;
+  top: 20px;
+
+}
+
+.descricao {
+  font-size: 24px;
+  z-index: 2;
+  position: relative;
+  left: 10%;
+  white-space: nowrap;
+  
+}
+
+video {
+  width: 700px;
+  position: relative;
+  left: 10%;
+  top: 10vh;
+  
+  
+}
+
+.classes {
+  float: right;
+  position: relative;
+  top: 10vh;
+ 
+  
+}
+
+
+.texto2 {
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  max-width: 100%;
+  
+  
+}
+
+#logos2 {
+  color: #fff;
+  top: -5px;
+}
+
+.confira {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.video2 {
+  float: right;
+  width: 650px;
+ left: -11%;
+  position: relative;
+  top: 20vh;
+  
+}
+
+
+.classes2 {
+  position: relative;
+  top: 20vh;
+  left: 10%;
+
+  
+}
+
+
+/* Default dark theme styles already exist */
+
+/* Light theme styles */
+.theme-toggle{
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  list-style: none;
+}
+.lw{
+  list-style: none;
+}
+
+body.light-theme {
+  background-color: #f0f0f0;
+  color: #403d38;
+}
+
+body.light-theme .header, 
+body.light-theme .footer,
+body.light-theme .sobremim {
+  background-color: #f0f0f0;
+   
+}
+body.light-theme .sobremim{
+  background-color: #ff6000;
+  
+}
+body.light-theme::-webkit-scrollbar-thumb{
+  background-color: #ff6000;
+  
+}
+
+body.light-theme .theme-toggle{
+  background-color: #ff6000;
+}
+body.light-theme .meus{
+  color: #403d38;
+}
+body.light-theme .footer{
+  background-color: #ff6000;
+}
+
+
+
+
+body.light-theme a {
+  color: #000;
+}
+
+body.light-theme .h1  {
+  color:#ff6000 ;
+}
+body.light-theme .p {
+  color: #403d38;
+}
+body.light-theme .h2{
+  color: #403d38;
+}
+body.light-theme .li3 i{
+  color: #403d38;
+  transition: .4s;
+}
+body.light-theme .titulo-loja {
+  color: #403d38;
+}
+body.light-theme .texto2 {
+  color: #403d38;
+}
+body.light-theme .confira{
+  color: #403d38;
+}
+body.light-theme #nome{
+  color: #ff6000;
+}
+body.light-theme .li3 i:hover{
+  color: #ff6000;
+}
+
+body.light-theme .p span {
+  color: #ff6000;
+}
+
+body.light-theme .li a {
+  color: #000;
+}
+body.light-theme .link {
+  color: #ff6000;
+}
+
+body.light-theme .li a::after {
+  background-color: #ff6000;
+}
+
+body.light-theme .li3:hover {
+  color: #000;
+}
+body.light-theme .li6 a ,
+body.light-theme .li6 i ,
+body.light-theme #contrate{
+  color: #ffffff;
+  transition: .4s;
+}
+
+
+
+body.light-theme .li6 a:hover ,
+body.light-theme .li6 i:hover{
+  color: #000;
+}
+body.light-theme .sobre ,
+  body.light-theme .descricao{
+    color: #fff;
+    
+  }
+  @media (max-width: 1366px) {
+    
+.emoji {
+  width: 450px;
+  float: right;
+  right: 50px;
+  position: relative;
+  top: 10px;
+  animation: slideInFromRight 1s ease-out;
+  transition: .4s;
+  cursor: pointer;
+}
+.emoji:hover{
+  transform: scale(1.1);
+}
+
+.ul, .ul2 ,.ul4 , .ul6{
+  display: flex;
+  position: relative;
+  right: 40px;
+}
+
+.li3 {
+  list-style: none;
+  font-size: 40px;
+  transition: .4s;
+}
+
+.li3:hover {
+  color: #865dff;
+}
+
+.li {
+  list-style: none;
+  padding-right: 9vw;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.li6:hover {
+  color: #23232e;
+}
+
+.li6 a {
+  text-decoration: none;
+  color: #fff;
+  transition: .4s;
+}
+
+.li6 a:hover {
+  color: #23232e;
+}
+
+.li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.projetos3{
+  position: relative;
+  top: 0;
+}
+
+nav a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: #865dff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.projetos {
+  position: relative;
+  top: 320px;
+  padding-left: 15px;
+}
+
+.projetos1 {
+  height: 25vh;
+  padding-left: 15px;
+  
+  transition: .4s;
+  filter: 0.9 ease;
+}
+
+.projetos1:hover {
+  transform: scale(1.1);
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.meus , .titulo-loja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#contrate {
+  top: 50px;
+}
+
+.titulo-loja {
+  position: relative;
+  left: 12vw;
+}
+
+.li5 {
+  list-style: none;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+#nome {
+  padding-right: 2vw;
+  color: #865dff;
+  padding-left: 30px;
+}
+
+.li6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  list-style: none;
+  position: relative;
+  top: 20vh;
+  left: 43vw;
+  color: #fff;
+  padding-right: 35px;
+  transition: .4s;
+  text-decoration: none;
+}
+
+.texto {
+  color: #fff;
+  position: relative;
+  top: 125px;
+  left: 65px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -300,17 +760,18 @@ i {
   
 }
 
-video {
-  width: 700px;
+.video1 {
+  width: 600px;
   position: relative;
   top: -270px;
+  left: 60px;
   
 }
 
 .classes {
   float: right;
   position: relative;
-  right: -300px;
+  left: 250px;
   top: 50px;
 }
 
@@ -337,135 +798,21 @@ video {
 
 .video2 {
   float: right;
-  width: 650px;
-  top: -150px;
-  right: 20px;
+  width: 550px;
+position: relative;
+margin-right: -80px;
+  
   
 }
 
 .classes2 {
   position: relative;
   top: -150px;
+  left: 60px;
   
 }
 
-
-/* Default dark theme styles already exist */
-
-/* Light theme styles */
-.theme-toggle{
-  width: 30px;
-  height: 10px;
-  border-radius: 10px;
-  list-style: none;
-}
-.lw{
-  list-style: none;
-}
-
-body.light-theme {
-  background-color: #f0f0f0;
-  color: #403d38;
-}
-
-body.light-theme .header, 
-body.light-theme .footer,
-body.light-theme .sobremim {
-  background-color: #f0f0f0;
-   
-}
-body.light-theme .sobremim{
-  background-color: #ff6000;
-  
-}
-body.light-theme::-webkit-scrollbar-thumb{
-  background-color: #ff6000;
-  
-}
-
-body.light-theme .theme-toggle{
-  background-color: #ff6000;
-}
-body.light-theme .meus{
-  color: #403d38;
-}
-body.light-theme .footer{
-  background-color: #ff6000;
-}
-
-
-
-
-body.light-theme a {
-  color: #000;
-}
-
-body.light-theme .h1  {
-  color:#ff6000 ;
-}
-body.light-theme .p {
-  color: #403d38;
-}
-body.light-theme .h2{
-  color: #403d38;
-}
-body.light-theme .li3 i{
-  color: #403d38;
-  transition: .4s;
-}
-body.light-theme .titulo-loja {
-  color: #403d38;
-}
-body.light-theme .texto2 {
-  color: #403d38;
-}
-body.light-theme .confira{
-  color: #403d38;
-}
-body.light-theme #nome{
-  color: #ff6000;
-}
-body.light-theme .li3 i:hover{
-  color: #ff6000;
-}
-
-body.light-theme .p span {
-  color: #ff6000;
-}
-
-body.light-theme .li a {
-  color: #000;
-}
-body.light-theme .link {
-  color: #ff6000;
-}
-
-body.light-theme .li a::after {
-  background-color: #ff6000;
-}
-
-body.light-theme .li3:hover {
-  color: #000;
-}
-body.light-theme .li6 a ,
-body.light-theme .li6 i ,
-body.light-theme #contrate{
-  color: #ffffff;
-  transition: .4s;
-}
-
-
-
-body.light-theme .li6 a:hover ,
-body.light-theme .li6 i:hover{
-  color: #000;
-}
-body.light-theme .sobre ,
-  body.light-theme .descricao{
-    color: #fff;
-    
   }
-
 
 
 
@@ -704,6 +1051,7 @@ body.light-theme .sobre ,
    position: relative;
    left: 14vw;
   }
+  
 
   .confira {
     font-size: 16px;
