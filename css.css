@@ -926,6 +926,7 @@ margin-right: -80px;
    position: relative;
    left:-3vw ;
    
+   
 
   }
 
@@ -943,13 +944,32 @@ margin-right: -80px;
   .texto {
     top: 80px;
     /* Ajuste a posição vertical conforme necessário */
-    left: 20px;
+    max-height: 630px;
+   
+   left: -5px;
     /* Ajuste a posição horizontal conforme necessário */
   }
-
-  .li3 {
-    margin-right: -10px;
+  .h2{
+    font-size: 50px;
+    z-index: -2;
   }
+  .h1{
+    font-size: 50px;
+    z-index: -2;
+  }
+.p {
+  font-size:30px ;
+  z-index: -2;
+}
+ i{
+  font-size: 25px;
+  margin-left: -60px;
+ }
+ .ul2{
+  position: relative;
+  left: 30px;
+  
+ }
 
   .mobile-menu {
     display: none;
@@ -960,7 +980,7 @@ margin-right: -80px;
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: #f8f8f8;
     margin: 8px;
     transition: 0.3s;
     z-index: 2;
@@ -1023,10 +1043,12 @@ margin-right: -80px;
   .mobile-menu {
     display: block;
   }
-  video {
-    width: 100%;
-    position: static;
-    top: 0;
+  .video1 {
+    width: 70%;
+    height: 100%;
+   left: -15px;
+    top: 5vh;
+    position: relative;
   }
 
   .classes {
@@ -1063,8 +1085,8 @@ margin-right: -80px;
     float: none;
     width: 100%;
     top: 0;
-    right: 0;
-    margin-top: 20px;
+   
+    margin-top: 50px;
   }
 
   .classes2 {
