@@ -677,6 +677,7 @@ i {
   background-color: #865dff;
   top: 300px;
   position: relative;
+  flex-direction: column;
 }
 
 .footer {
@@ -757,6 +758,8 @@ i {
   position: relative;
   left: 2vw;
   white-space: nowrap;
+  max-width: 90%;
+  word-break: break-word;
   
 }
 
@@ -828,7 +831,14 @@ margin-right: -80px;
     /* Centralizar o conteúdo */
     justify-content: center;
   font-size: 20px;
+  position: relative;
+
   }
+.conteudo-completo{
+  position: relative;
+  top: 10vh;
+}
+
   .texto{
     position: relative;
     margin-right: 5px;
@@ -920,19 +930,18 @@ margin-right: -80px;
 
   }
 
-  .descricao {
-
-
+  .descricao{
     font-size: 14px;
-   position: relative;
-   left:-3vw ;
+    position: relative;
+    left:-3vw ;
    
-   
-   
-
+    
   }
 
-
+.conteudo2{
+  position: relative;
+  top: 50vh;
+}
 
   .emoji {
     z-index: -1;
@@ -1056,9 +1065,15 @@ margin-right: -80px;
   .video1 {
     width: 90%;
     height: 100%;
-   left: -00.1vw;
+   left: 10px;
     top: 5vh;
     position: relative;
+  }
+  #logos{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15%;
   }
 
   .classes {
@@ -1096,7 +1111,7 @@ margin-right: -80px;
     width: 90%;
     top: 0;
    position: relative;
-   left: 5px;
+   left: 10px;
     margin-top: 50px;
   }
 
