@@ -98,70 +98,34 @@
 <div id="projetos"  class="projetos">
     
 <h1 class="titulo-loja">Melhores projetos</h1>
-<div class="classes">
-<p class="texto2">A BR é uma loja de roupas fictícia criada <br>especialmente para este projeto.<br> O projeto inclui uma ampla variedade de<br> páginas de navegação, como a página inicial, <br>a tela de login, e as páginas de roupas, incluindo<br> moletons masculinos, moletons femininos,<br> roupas femininas e roupas masculinas.<br>E responsivo para telas mobile</p>
-<div class="logos" id="logos2">
-    <ul class="ul2">
-        <li class="li3">
-    <i class="fa-brands fa-html5" ></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-css3-alt"></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-js"></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-figma"></i>
-</li>
 
-</ul>
-  </div>
-  <p class="confira">confira o site:<a class="link" href="https://brendolimafonseca.github.io/projeto-roupa/" target="_blank">link do site</a>
-  </p>
-</div>
-<video class="video1" src="./video (2).mp4" controls></video>
 
-<video class="video2" id="video2" src="./video2.mp4" controls></video>
-<div class="classes2">
-<p class="texto2">Este projeto é uma loja online de eletrônicos que oferece <br>produtos como headsets, mouses e teclados. O site possui <br>páginas de navegação para home, cadastro, login, carrinho<br> e pagamento. Com este projeto, pretendo aprimorar minhas<br> habilidades em JavaScript, especialmente no desenvolvimento <br>de sistemas de adição de itens ao carrinho, além de melhorar a <br>qualidade da minha escrita em CSS e HTML.</p>
-<div class="logos" id="logos2">
-    <ul class="ul2">
-        <li class="li3">
-    <i class="fa-brands fa-html5" ></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-css3-alt"></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-js"></i>
-</li>
-<li class="li3">
-    <i class="fa-brands fa-figma"></i>
-</li>
 
-</ul>
-  </div>
-  <p class="confira">confira o site:<a class="link" href="https://brendolimafonseca.github.io/projeto-eletronico/" target="_blank">link do site</a>
-  </p>
-</div>
 
 
 <div class="projetos3">
-<h1 class="meus">Outros projetos</h1>
 <ul class="ul4">
     <li class="li5">
- <a href="https://brendolimafonseca.github.io/calculadora/" target="_blank" ><img class="projetos1" src="./projetocalculadora.png" width="100%" alt=""></a>
+ <a href="https://brendolimafonseca.github.io/calculadora/" target="_blank" ><img class="projetos1" id="projeto11"   src="./projeto1-Photoroom.png" width="550vw" alt=""></a>
     </li>
     <li class="li5">
-       <a href="https://brendolimafonseca.github.io/projeto-pokemon/" target="_blank"> <img class="projetos1"  src="./projetopokemon.png" width="100%" alt=""></a>
+       <a href="https://brendolimafonseca.github.io/projeto-pokemon/" target="_blank"> <img class="projetos1"id="projeto11"  src="./projeto2-Photoroom.png" width="550vw" alt=""></a>
+    </li>
+   
+</ul>
+    <ul class="ul4">
+    <li class="li5">
+      <a href="https://brendolimafonseca.github.io/projeto-roupa/" target="_blank" ><img class="projetos1" id="projeto11"  src="./projeto4-Photoroom.png" width="550vw" alt=""></a>
     </li>
     <li class="li5">
-        <a href="https://brendolimafonseca.github.io/projetohunterxhunter/" target="_blank" ><img class="projetos1"  src="./projetohunter.png" width="100%" alt=""></a>
+        <a href="https://brendolimafonseca.github.io/projetoonepiece/" target="_blank" ><img class="projetos1" id="projeto11"  src="./projeto3-Photoroom.png" width="550vw" alt=""></a>
     </li>
+    
+</ul>
+<ul class="ul4">
     <li class="li5">
-      <a href="https://brendolimafonseca.github.io/projetoonepiece/" target="_blank" ><img class="projetos1"  src="./projetoonepiece.png" width="100%" alt=""></a>
-    </li>
+        <a href="https://brendolimafonseca.github.io/helpdogs/" target="_blank" ><img class="projetos1" id="projeto11"  src="./projeto5-Photoroom.png" width="550vw" alt=""></a>
+      </li>
 </ul>
 </div>
 </div>
@@ -322,27 +286,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let sobre = document.querySelector('.sobre');
     let descricao = document.querySelector('.descricao');
     let listas = document.querySelector('.listas');
-    let video1 = document.querySelector('.video1');
-    let classes = document.querySelector('.classes');
-    let video2 = document.querySelector('.video2');
-    let classes2 = document.querySelector('.classes2');
-    let ul4 = document.querySelector('.ul4');
+    let ul4Elements = document.querySelectorAll('.ul4'); // Seleciona todas as ul4
     let contatos = document.querySelector('.contatos');
 
     // Observa os elementos
     observer.observe(sobre);
     observer.observe(descricao);
     observer.observe(listas);
-    observer.observe(video1);
-    observer.observe(classes);
-    observer.observe(video2);
-    observer.observe(classes2);
-    observer.observe(ul4);
     observer.observe(contatos);
+    ul4Elements.forEach(ul => observer.observe(ul)); // Adiciona cada uma ao observer
 });
 
 
 
 </script>
+
 </body>
 </html>
