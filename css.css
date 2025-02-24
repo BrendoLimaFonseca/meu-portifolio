@@ -45,7 +45,7 @@ body {
 .ul, .ul2 ,.ul4 , .ul6{
   display: flex;
   position: relative;
-  right: 40px;
+
 }
 
 .li3 {
@@ -105,7 +105,7 @@ nav a::after {
 }
 
 .projetos1 {
-  height: 25vh;
+  
   padding-left: 15px;
   padding-top: 20px;
   transition: .4s;
@@ -118,6 +118,10 @@ nav a::after {
 
 .blur {
   filter: blur(3px);
+}
+
+#projeto11{
+  height: 65vh;
 }
 
 .meus , .titulo-loja {
@@ -252,20 +256,10 @@ i {
 .listas.animate {
   animation: slideInFromRight 1s ease-out forwards;
 }
-.video1.animate {
-  animation: slideInFromLeft 1s ease-out forwards;
-}
-.classes.animate {
-  animation: slideInFromRight 1s ease-out forwards;
-}
-.video2.animate {
-  animation: slideInFromRight 1s ease-out forwards;
-}
-.classes2.animate {
-  animation: slideInFromLeft 1s ease-out forwards;
-}
+
+
 .ul4.animate {
-  animation: slideInFromLeft 1s ease-out forwards;
+  animation: slideInFromRight 1s ease-out forwards;
 }
 .contatos.animate {
   animation: slideInFromLeft 1s ease-out forwards;
@@ -306,14 +300,7 @@ i {
   
 }
 
-video {
-  width: 700px;
-  position: relative;
-  left: 10%;
-  top: 10vh;
-  
-  
-}
+
 
 .classes {
   float: right;
@@ -324,23 +311,6 @@ video {
 }
 
 
-.texto2 {
-  color: #fff;
-  position: relative;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  max-width: 100%;
-  
-  
-}
-
-#logos2 {
-  color: #fff;
-  top: -5px;
-}
-
 .confira {
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -348,14 +318,7 @@ video {
   font-style: normal;
 }
 
-.video2 {
-  float: right;
-  width: 650px;
- left: -11%;
-  position: relative;
-  top: 20vh;
-  
-}
+
 
 
 .classes2 {
@@ -855,14 +818,10 @@ margin-right: -80px;
     padding: 0; /* Remova todo o preenchimento */
   }
   
-  .projetos1 {
-    width: 100%; /* Defina a largura das imagens como 100% */
-    height: auto; /* Altura automática para manter a proporção */
-    padding: 0; /* Remova todos os preenchimentos */
-  }
+ 
   
   .li5 {
-    margin-bottom: 20px; /* Adicione um espaçamento entre as imagens */
+    text-align: center; /* Centralize os itens horizontalmente */
     padding-left: 35px;
   }
   
@@ -877,25 +836,14 @@ margin-right: -80px;
     align-items: center; /* Centralize os itens horizontalmente */
   }
   
-  .li5 {
-    width: 100%; /* Certifique-se de que os itens ocupem toda a largura */
-    text-align: center; /* Centralize os itens horizontalmente */
-  }
-
-  .projetos {
-     /* Reinicie a posição para o topo */
-    padding-left: 0; /* Remova o preenchimento esquerdo */
-  }
   
   .projetos1 {
-    width: 100%; /* Defina a largura das imagens como 100% */
-    height: auto; /* Altura automática para manter a proporção */
-    padding: 0; /* Remova todos os preenchimentos */
+    width: 100vw;
+    
+ 
   }
   
-  .li5 {
-    margin-bottom: 20px; /* Adicione um espaçamento entre as imagens */
-  }
+ 
   
   .meus {
     text-align: center; /* Centralize o título */
