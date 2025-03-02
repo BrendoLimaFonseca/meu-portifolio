@@ -44,7 +44,12 @@
        <a href="#footer"> Contatos</a>
     </li>
     <li class="lw">
-        <button id="theme-togglee" id="theme-togglee" class="theme-toggle"></button>
+        <div class="cl-toggle-switch">
+            <label class="cl-switch">
+              <input type="checkbox" id="theme-togglee"  class="theme-toggle">
+              <span></span>
+            </label>
+          </div>
     </li>
    
 </ul>
@@ -56,7 +61,7 @@
 <div class="main">
 <img class="emoji"  src="./brendoemoji.png" alt="">
 <div class="texto">
-<h2 class="h2">Olá, meu nome é</h2>
+    <h2 class="h2"><span id="texto"></span></h2>
 <h1 class="h1">Brendo Fonseca</h1>
 <p class="p">Eu sou designer gráfico 
   <span class="blue-amp"> & </span>  desenvolvedor <br>frontend</p>
@@ -299,7 +304,22 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(contatos);
     ul4Elements.forEach(ul => observer.observe(ul)); // Adiciona cada uma ao observer
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const textoElement = document.getElementById("texto");
+    const textoOriginal = "Olá, meu nome é";
+    
+    let i = 0;
+    
+    function digitar() {
+        if (i < textoOriginal.length) {
+            textoElement.innerHTML += textoOriginal.charAt(i);
+            i++;
+            setTimeout(digitar, 100); // Ajuste a velocidade aqui
+        }
+    }
 
+    digitar();
+});
 
 
 </script>
