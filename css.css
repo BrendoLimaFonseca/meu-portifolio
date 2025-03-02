@@ -86,6 +86,19 @@ body {
   color: #fff;
   position: relative;
 }
+#texto::after {
+  content: "|"; /* Simula o cursor */
+  display: inline-block;
+  margin-left: 5px;
+  opacity: 1;
+  animation: piscar 0.7s infinite;
+}
+
+@keyframes piscar {
+  50% {
+      opacity: 0;
+  }
+}
 
 nav a::after {
   content: " ";
@@ -445,6 +458,7 @@ body.light-theme .sobre ,
     color: #fff;
     
   }
+ 
   @media (max-width: 1366px) {
     
 .emoji {
@@ -777,6 +791,92 @@ margin-right: -80px;
   left: 60px;
   
 }
+/* From Uiverse.io by lenin55 */ 
+.cl-toggle-switch {
+  position: relative;
+ }
+ 
+ .cl-switch {
+  position: relative;
+  display: inline-block;
+ }
+ /* Input */
+ .cl-switch > input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  z-index: -1;
+  position: absolute;
+  right: 6px;
+  top: -8px;
+  display: block;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 0, 0, 0.38);
+  outline: none;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+ }
+ /* Track */
+ .cl-switch > span::before {
+  content: "";
+  float: right;
+  display: inline-block;
+  margin: 5px 0 5px 10px;
+  border-radius: 7px;
+  width: 36px;
+  height: 14px;
+  background-color: rgb(0, 0, 0, 0.38);
+  vertical-align: top;
+  transition: background-color 0.2s, opacity 0.2s;
+ }
+ /* Thumb */
+ .cl-switch > span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #865dff;
+  
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s, transform 0.2s;
+ }
+ /* Checked */
+ 
+ 
+ .cl-switch > input:checked + span::before {
+  background-color: #403d38;
+ }
+ 
+ .cl-switch > input:checked + span::after {
+  background-color: #ff6000 ;
+  transform: translateX(16px);
+ }
+ /* Hover, Focus */
+ .cl-switch:hover > input {
+  opacity: 0.04;
+ }
+ 
+ 
+ 
+ 
+ /* Active */
+
+ 
+ 
+ 
+ 
+ /* Disabled */
+
+ 
+ 
 
   }
 
