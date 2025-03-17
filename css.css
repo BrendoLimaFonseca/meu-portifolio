@@ -118,11 +118,13 @@ nav a::after {
 }
 
 .projetos1 {
-  
+  width: 32vw;
   padding-left: 15px;
   padding-top: 20px;
   transition: .4s;
   filter: 0.9 ease;
+  position: relative;
+  right: 2vw;
 }
 
 .projetos1:hover {
@@ -133,9 +135,7 @@ nav a::after {
   filter: blur(3px);
 }
 
-#projeto11{
-  height: 65vh;
-}
+
 
 .meus , .titulo-loja {
   display: flex;
@@ -239,7 +239,10 @@ i {
 
 .projetos3{
   position: relative;
-  top: 30vh;
+ justify-content: center;
+align-items: center;
+text-align: center;
+left: 15vw;
 }
 
 .footer {
@@ -248,7 +251,7 @@ i {
   background-color: #865dff;
   
   position: relative;
-  top: 80vh;
+  top: 40vh;
 }
 
 .listas {
@@ -458,6 +461,96 @@ body.light-theme .sobre ,
     color: #fff;
     
   }
+
+  
+/* From Uiverse.io by lenin55 */ 
+.cl-toggle-switch {
+  position: relative;
+ }
+ 
+ .cl-switch {
+  position: relative;
+  display: inline-block;
+ }
+ /* Input */
+ .cl-switch > input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  z-index: -1;
+  position: absolute;
+  right: 6px;
+  top: -8px;
+  display: block;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 0, 0, 0.38);
+  outline: none;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+ }
+ /* Track */
+ .cl-switch > span::before {
+  content: "";
+  float: right;
+  display: inline-block;
+  margin: 5px 0 5px 10px;
+  border-radius: 7px;
+  width: 36px;
+  height: 14px;
+  background-color: rgb(0, 0, 0, 0.38);
+  vertical-align: top;
+  transition: background-color 0.2s, opacity 0.2s;
+ }
+ /* Thumb */
+ .cl-switch > span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #865dff;
+  
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s, transform 0.2s;
+ }
+ /* Checked */
+ 
+ 
+ .cl-switch > input:checked + span::before {
+  background-color: #403d38;
+ }
+ 
+ .cl-switch > input:checked + span::after {
+  background-color: #ff6000 ;
+  transform: translateX(16px);
+ }
+ /* Hover, Focus */
+ .cl-switch:hover > input {
+  opacity: 0.04;
+ }
+ 
+ 
+ 
+ 
+ /* Active */
+
+ 
+ 
+ 
+ 
+ /* Disabled */
+
+ 
+ 
+
+  
  
   @media (max-width: 1366px) {
     
@@ -535,6 +628,7 @@ nav a::after {
   transition: 0.5s ease-in-out;
 }
 
+
 .projetos {
   position: relative;
   top: 320px;
@@ -542,9 +636,9 @@ nav a::after {
 }
 
 .projetos1 {
-  height: 25vh;
-  padding-left: 15px;
-  
+  height: 75vh;
+ right: 10vw;
+  width: 40vw;
   transition: .4s;
   filter: 0.9 ease;
 }
@@ -740,13 +834,7 @@ i {
   
 }
 
-.video1 {
-  width: 600px;
-  position: relative;
-  top: -270px;
-  left: 60px;
-  
-}
+
 
 .classes {
   float: right;
