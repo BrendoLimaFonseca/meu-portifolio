@@ -632,11 +632,11 @@ nav a::after {
 .projetos {
   position: relative;
   top: 320px;
-  padding-left: 15px;
+  
 }
 
 .projetos1 {
-  height: 75vh;
+  
  right: 10vw;
   width: 40vw;
   transition: .4s;
@@ -670,6 +670,10 @@ nav a::after {
 
 .li5 {
   list-style: none;
+  width: 100px;
+  position: relative;
+  left: -42vw;
+ 
 }
 
 nav a:hover::after {
