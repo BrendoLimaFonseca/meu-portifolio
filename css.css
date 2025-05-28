@@ -162,6 +162,20 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.button{
+  width: 15vw;
+  height: 7vh;
+  position: relative;
+  top: 12vh;
+  border: none;
+  background-color: #865dff;
+  color: #ffffff;
+  transition: .4s;
+}
+.button:hover{
+  background-color: #48318b;
+ 
+}
 
 #nome {
   padding-right: 2vw;
@@ -388,7 +402,15 @@ body.light-theme .meus{
 body.light-theme .footer{
   background-color: #ff6000;
 }
-
+body.light-theme .button{
+  background-color: #ff6000;
+  color: #ffffff;
+  transition: .4s;
+}
+body.light-theme .button:hover{
+  background-color: #923800;
+  color: #ffffff;
+}
 
 
 
@@ -700,7 +722,7 @@ nav a:hover::after {
 .texto {
   color: #fff;
   position: relative;
-  top: 125px;
+margin-top: -20px;
   left: 65px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -717,6 +739,23 @@ nav a:hover::after {
 
 .h2 {
   font-size: 35px;
+}
+.button{
+  width: 15vw;
+  height: 7vh;
+  position: relative;
+  top: 12vh;
+  border: none;
+  background-color: #865dff;
+  color: #ffffff;
+  transition: .4s;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.button:hover{
+  background-color: #48318b;
+
 }
 
 .h1 {
@@ -987,12 +1026,13 @@ margin-right: -80px;
   }
 .conteudo-completo{
   position: relative;
-  top: 10vh;
+  top: 30vh;
 }
 
   .texto{
     position: relative;
     margin-right: 5px;
+    
   }
   body.light-theme .theme-toggle{
     background-color: #fff;
@@ -1005,8 +1045,22 @@ margin-right: -80px;
     top: 310px; /* Reinicie a posição para o topo */
     padding: 0; /* Remova todo o preenchimento */
   }
-  
- 
+  .footer{
+    position: relative;
+    top: 120vh;
+  }
+ .button{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 50vw;
+  position: relative;
+  left: 25vw;
+
+ }
   
   .li5 {
     text-align: center; /* Centralize os itens horizontalmente */
@@ -1244,14 +1298,7 @@ margin-right: -80px;
     text-align: center;
   }
 
-  .video2 {
-    float: none;
-    width: 90%;
-    top: 0;
-   position: relative;
-   left: 10px;
-    margin-top: 50px;
-  }
+  
 
   .classes2 {
     position: static;
