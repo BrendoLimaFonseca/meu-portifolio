@@ -1,3 +1,5 @@
+ html {scroll-behavior: smooth;}
+
 body {
   background-color: #191825;
   overflow-x: hidden;
@@ -371,6 +373,9 @@ left: 15vw;
 }
 .lw{
   list-style: none;
+  position: relative;
+left: 85vw;
+top: -6vh;
 }
 
 body.light-theme {
@@ -575,6 +580,8 @@ body.light-theme .sobre ,
   
  
   @media (max-width: 1366px) {
+
+    html {scroll-behavior: smooth;}
     
 .emoji {
   width: 450px;
@@ -703,6 +710,11 @@ nav a:hover::after {
   color: #865dff;
   padding-left: 30px;
 }
+#ul2{
+  position: relative;
+  top: -10vh;
+  z-index: 2;
+}
 
 .li6 {
   display: flex;
@@ -779,6 +791,11 @@ margin-top: -20px;
 
 i {
   width: 100px;
+  color: #fff;
+  transition: .4s;
+}
+i:hover{
+  color: #48318b;
 }
 
 .sobremim {
@@ -903,20 +920,20 @@ i {
   font-style: normal;
 }
 
-.video2 {
-  float: right;
-  width: 550px;
-position: relative;
-margin-right: -80px;
-  
-  
-}
+
 
 .classes2 {
   position: relative;
   top: -150px;
   left: 60px;
   
+}
+
+.lw{
+  list-style: none;
+  position: relative;
+left: 85vw;
+top: -6vh;
 }
 /* From Uiverse.io by lenin55 */ 
 .cl-toggle-switch {
@@ -1047,7 +1064,7 @@ margin-right: -80px;
   }
   .footer{
     position: relative;
-    top: 120vh;
+    top: 70vh;
   }
  .button{
   display: flex;
@@ -1064,9 +1081,12 @@ margin-right: -80px;
   
   .li5 {
     text-align: center; /* Centralize os itens horizontalmente */
-    
   }
-  
+  i{
+    margin-inline: 5px;
+  }
+
+
   .meus {
     text-align: center; /* Centralize o título */
     left: 0; /* Reinicie a posição */
@@ -1213,7 +1233,12 @@ margin-right: -80px;
   .li a:hover::after {
     width: 100%;
   }
-
+#ul2{
+  position: relative;
+  left: 20vw;
+  top: -40px;
+  
+}
 
 
   body {
@@ -1222,6 +1247,11 @@ margin-right: -80px;
   .ul6{
   position: relative;
   left: 1px;
+  }
+  .lw{
+    position: relative;
+    top: -25px;
+    right: 20vw;
   }
 
   .ul {
@@ -1254,13 +1284,7 @@ margin-right: -80px;
   .mobile-menu {
     display: block;
   }
-  .video1 {
-    width: 90%;
-    height: 100%;
-   left: 10px;
-    top: 5vh;
-    position: relative;
-  }
+  
   #logos{
     justify-content: center;
     align-items: center;
