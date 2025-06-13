@@ -488,6 +488,16 @@ body.light-theme .sobre ,
     color: #fff;
     
   }
+  body.light-theme nav.scrolled {
+  background-color:transparent; /* cor após descer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra opcional */
+  backdrop-filter: blur(100px);
+  color: #fff;
+}
+body.light-theme nav{
+  background-color: #f0f0f0;
+  backdrop-filter: blur(10px);
+}
 
   
 /* From Uiverse.io by lenin55 */ 
@@ -644,6 +654,22 @@ body.light-theme .sobre ,
 .projetos3{
   position: relative;
   top: 0;
+}
+nav{
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#191825; /* branco com transparência */
+  
+  z-index: 9999;
+ 
+}
+/* Navbar após scroll */
+nav.scrolled {
+  background-color:transparent; /* cor após descer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra opcional */
+  backdrop-filter: blur(100px);
 }
 
 nav a::after {
