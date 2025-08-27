@@ -168,7 +168,7 @@
    width: 350px;
    overflow: hidden;
    transition: .4s;
-  height: 36vh;
+  height: 32vh;
  }
 
  .card:hover {
@@ -445,17 +445,17 @@ position: relative;
  }
 
  body.light-theme .sobremim {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
 
  }
 
  body.light-theme::-webkit-scrollbar-thumb {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
 
  }
 
  body.light-theme .theme-toggle {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
  }
 
  body.light-theme .meus {
@@ -463,17 +463,17 @@ position: relative;
  }
 
  body.light-theme .footer {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
  }
 
  body.light-theme .button {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
    color: #ffffff;
    transition: .4s;
  }
 
  body.light-theme .button:hover {
-   background-color: #923800;
+   background-color: #8d89ac;
    color: #ffffff;
  }
 
@@ -491,19 +491,19 @@ position: relative;
  }
 
  body.light-theme .tech-stack {
-   color: #ff6000;
+   color: #C2BBF0;
  }
 
  body.light-theme .btn {
-   background-color: #ff6000;
+   background-color: #C2BBF0;
  }
 
  body.light-theme .btn:hover {
-   background-color: #923800;
+   background-color: #8d89ac;
  }
 
  body.light-theme .btn i:hover {
-   color: #491c00;
+   color: #5c5970;
  }
 
  body.light-theme a {
@@ -511,7 +511,7 @@ position: relative;
  }
 
  body.light-theme .h1 {
-   color: #ff6000;
+   color: #C2BBF0;
  }
 
  body.light-theme .p {
@@ -540,15 +540,15 @@ position: relative;
  }
 
  body.light-theme #nome {
-   color: #ff6000;
+   color:#C2BBF0;
  }
 
  body.light-theme .li3 i:hover {
-   color: #ff6000;
+   color: #8d89ac;
  }
 
  body.light-theme .p span {
-   color: #ff6000;
+   color: #C2BBF0;
  }
 
  body.light-theme .li a {
@@ -556,11 +556,11 @@ position: relative;
  }
 
  body.light-theme .link {
-   color: #ff6000;
+   color: #C2BBF0;
  }
 
  body.light-theme .li a::after {
-   background-color: #ff6000;
+   background-color: #8d89ac;
  }
 
  body.light-theme .li3:hover {
@@ -578,7 +578,7 @@ position: relative;
 
  body.light-theme .li6 a:hover,
  body.light-theme .li6 i:hover {
-   color: #000;
+   color: #8d89ac;
  }
 
  body.light-theme .sobre,
@@ -1168,7 +1168,7 @@ height: 10vh;
    }
 
    .cl-switch>input:checked+span::after {
-     background-color: #ff6000;
+     background-color: #C2BBF0;
      transform: translateX(16px);
    }
 
