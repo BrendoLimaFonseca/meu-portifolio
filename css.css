@@ -161,7 +161,22 @@
    justify-content: center;
    align-items: stretch; /* força todos a terem a mesma altura */
  }
+ #nome2{
+  position: relative;
+  top: 18vh;
 
+ }
+
+.icon{
+  fill: #fff;
+  width: 50px;
+  transition: .4s;
+  top: -2vh;
+  position: relative;
+}
+.icon:hover{
+  fill: #865dff;
+}
  .card {
    background-color: #1e1e1e;
    border-radius: 16px;
@@ -307,8 +322,8 @@ nav.scrolled {
    font-size: 40px;
    list-style: none;
    position: relative;
-   top: 20vh;
-   left: 43vw;
+   top: 16vh;
+   left: 44vw;
    color: #fff;
    padding-right: 35px;
    transition: .4s;
@@ -512,6 +527,10 @@ position: relative;
    color: #403d38;
  }
 
+body.light-theme #nome2{
+  color: #fff;
+}
+
  body.light-theme .card p {
    color: #403d38;
  }
@@ -612,6 +631,12 @@ position: relative;
    color: #fff;
 
  }
+ body.light-theme .icon{
+  fill: #403d38;
+ }
+  body.light-theme .icon:hover{
+    fill: #C2BBF0;
+  }
 
  body.light-theme nav.scrolled {
    background-color: transparent;
@@ -857,7 +882,7 @@ height: 10vh;
      font-size: 40px;
      list-style: none;
      position: relative;
-     top: 20vh;
+     top: 17vh;
      left: 43vw;
      color: #fff;
      padding-right: 35px;
@@ -1263,6 +1288,7 @@ html , body {
      position: relative;
      left: 25vw;
      text-decoration: none;
+     top: 20px;
 
    }
 
@@ -1270,7 +1296,8 @@ html , body {
      margin-inline: 5px;
      font-size: 40px;
      position: relative;
-   left: -20vw;
+   left: -18vw;
+   top: -2vh;
     
    }
 
@@ -1279,6 +1306,17 @@ html , body {
      text-align: center;
      left: 0;
    }
+   .icon{
+  fill: #fff;
+  width: 25px;
+  transition: .4s;
+  top: -2vh;
+  position: relative;
+  left: -15vw;
+}
+.icon:hover{
+  fill: #865dff;
+}
 
    .row {
      flex-wrap: wrap;
